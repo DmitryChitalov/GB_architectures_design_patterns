@@ -1,0 +1,506 @@
+2021-04-24 11:25:53,194 INFO main.py /
+2021-04-24 11:25:53,195 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:25:53,452 INFO main.py /favicon.ico
+2021-04-24 11:25:53,452 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:25:55,145 INFO main.py /
+2021-04-24 11:25:55,146 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:25:56,048 INFO main.py /direction
+2021-04-24 11:25:56,049 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:25:58,139 INFO main.py /
+2021-04-24 11:25:58,140 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:25:59,482 INFO main.py /about
+2021-04-24 11:25:59,483 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:00,532 INFO main.py /
+2021-04-24 11:26:00,532 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:02,278 INFO main.py /contacts
+2021-04-24 11:26:02,278 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:04,359 INFO main.py /
+2021-04-24 11:26:04,359 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:05,702 INFO main.py /about
+2021-04-24 11:26:05,702 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:06,995 INFO main.py /
+2021-04-24 11:26:06,995 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:08,485 INFO main.py /direction
+2021-04-24 11:26:08,485 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:09,904 INFO main.py /
+2021-04-24 11:26:09,904 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:26:18,394 INFO main.py /
+2021-04-24 11:26:18,395 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:29:00,652 INFO main.py /direction
+2021-04-24 11:29:00,653 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:29:03,834 INFO main.py /
+2021-04-24 11:29:03,834 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:29:04,998 INFO main.py /calendar
+2021-04-24 11:29:04,998 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:29:10,438 INFO main.py /
+2021-04-24 11:29:10,438 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:29:11,656 INFO main.py /calendar
+2021-04-24 11:29:11,657 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 11:32:10,753 INFO main.py /calendar
+2021-04-24 11:32:10,754 INFO main.py Нам пришёл post-запрос: {'name': 'Евгений', 'email': '1@ru', 'phone': '909', 'location': 'ac', 'member': 'yes'}
+2021-04-24 11:38:42,586 INFO main.py /calendar
+2021-04-24 11:38:42,587 INFO main.py Нам пришёл post-запрос: {'name': 'EVGENIY SARMANOV', 'email': 'esarmanov@gmail.com', 'phone': '89058010169', 'location': 'ac', 'member': 'yes'}
+2021-04-24 11:43:53,503 INFO main.py /calendar
+2021-04-24 11:43:53,503 INFO main.py Нам пришли GET-параметры: {'name': 'Zheja'}
+2021-04-24 11:44:19,041 INFO main.py /calendar
+2021-04-24 11:44:19,042 INFO main.py Нам пришли GET-параметры: {'name': 'Zheja', 'email': 'fjljgldjk;d'}
+2021-04-24 11:44:43,112 INFO main.py /calendar
+2021-04-24 11:44:54,781 INFO main.py /calendar
+2021-04-24 11:44:54,781 INFO main.py Нам пришли GET-параметры: {'name': 'Zheja', 'email': 'fjljgldj'}
+2021-04-24 11:45:01,407 INFO main.py /calendar
+2021-04-24 11:45:01,407 INFO main.py Нам пришли GET-параметры: {'name': 'Zheja', 'email': 'fj'}
+2021-04-24 11:45:42,385 INFO main.py /calendar
+2021-04-24 11:45:42,385 INFO main.py Нам пришёл post-запрос: {'name': 'rrrr', 'email': '1@ru', 'phone': '911', 'location': 'ac'}
+2021-04-24 11:46:06,200 INFO main.py /calendar
+2021-04-24 11:46:06,200 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '888'}
+2021-04-24 12:03:53,072 INFO main.py /calendar
+2021-04-24 12:04:24,871 INFO main.py /calendar
+2021-04-24 12:04:24,872 INFO main.py Нам пришёл post-запрос: {'name': '1', 'email': '1@ru', 'phone': '12', 'location': 'ac'}
+2021-04-24 12:05:49,308 INFO main.py /calendar
+2021-04-24 12:05:49,309 INFO main.py Нам пришёл post-запрос: {'name': 'qqq', 'email': '', 'phone': '', 'location': 'ac'}
+2021-04-24 12:09:23,982 INFO main.py /calendar
+2021-04-24 12:09:23,983 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'location': 'ac'}
+2021-04-24 12:10:05,745 INFO main.py /calendar
+2021-04-24 12:10:05,745 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'location': 'ac'}
+2021-04-24 12:18:42,240 INFO main.py /calendar
+2021-04-24 12:18:42,241 INFO main.py Нам пришёл post-запрос: {'name': 'test1', 'email': 'test@ru', 'phone': '911', 'location': 'yz', 'member': 'yes'}
+2021-04-24 12:19:37,253 INFO main.py /calendar
+2021-04-24 12:19:37,254 INFO main.py Нам пришёл post-запрос: {'name': 'test1', 'email': 'test@ru', 'phone': '911', 'location': 'yz', 'member': 'yes'}
+2021-04-24 12:21:19,275 INFO main.py /calendar
+2021-04-24 12:21:19,276 INFO main.py Нам пришёл post-запрос: {'name': 'test1', 'email': 'test@ru', 'phone': '911', 'location': 'yz', 'member': 'yes'}
+2021-04-24 12:22:59,120 INFO main.py /calendar
+2021-04-24 12:22:59,121 INFO main.py Нам пришёл post-запрос: {'name': 'test1', 'email': 'test@ru', 'phone': '911', 'location': 'yz', 'member': 'yes'}
+2021-04-24 12:27:42,537 INFO main.py /calendar
+2021-04-24 12:27:42,537 INFO main.py Нам пришёл post-запрос: {'name': 'test1', 'email': 'test@ru', 'phone': '911', 'location': 'yz', 'member': 'yes'}
+2021-04-24 12:29:44,982 INFO main.py /calendar
+2021-04-24 12:29:44,983 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '888'}
+2021-04-24 12:30:26,423 INFO main.py /calendar
+2021-04-24 12:30:26,423 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '8888'}
+2021-04-24 12:32:25,465 INFO main.py /calendar
+2021-04-24 12:32:25,466 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '8888'}
+2021-04-24 12:33:05,468 INFO main.py /calendar
+2021-04-24 12:33:05,468 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '8888'}
+2021-04-24 12:35:09,430 INFO main.py /calendar
+2021-04-24 12:35:09,430 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '8888'}
+2021-04-24 12:36:48,090 INFO main.py /calendar
+2021-04-24 12:36:48,090 INFO main.py Нам пришли GET-параметры: {'name': '!!!!!!!', 'phone': '8888'}
+2021-04-24 12:37:04,369 INFO main.py /calendar
+2021-04-24 12:37:04,369 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 12:37:34,374 INFO main.py /calendar
+2021-04-24 12:37:34,374 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999\\'}
+2021-04-24 12:37:37,013 INFO main.py /calendar
+2021-04-24 12:37:37,013 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 12:37:38,972 INFO main.py /calendar
+2021-04-24 12:37:38,972 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 12:38:33,970 INFO main.py /calendar
+2021-04-24 12:38:33,970 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 12:39:13,844 INFO main.py /calendar
+2021-04-24 12:39:13,844 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 12:39:44,108 INFO main.py /calendar
+2021-04-24 12:39:44,109 INFO main.py Нам пришёл post-запрос: {'name': '1', 'email': '', 'phone': '', 'location': 'ac'}
+2021-04-24 12:40:33,252 INFO main.py /calendar
+2021-04-24 12:40:33,252 INFO main.py Нам пришёл post-запрос: {'name': '1', 'email': '', 'phone': '', 'location': 'ac'}
+2021-04-24 12:42:05,203 INFO main.py /
+2021-04-24 12:42:05,203 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 12:42:06,890 INFO main.py /calendar
+2021-04-24 12:42:06,891 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 12:46:00,818 INFO main.py /
+2021-04-24 12:46:00,818 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 12:46:06,292 INFO main.py /calendar
+2021-04-24 12:46:06,293 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 12:46:41,571 INFO main.py /calendar
+2021-04-24 12:46:41,571 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': ''}
+2021-04-24 12:47:37,793 INFO main.py /calendar
+2021-04-24 12:47:37,794 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': ''}
+2021-04-24 12:47:48,818 INFO main.py /calendar
+2021-04-24 12:47:48,819 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': ''}
+2021-04-24 12:47:50,634 INFO main.py /calendar
+2021-04-24 12:47:50,634 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': ''}
+2021-04-24 12:47:51,115 INFO main.py /calendar
+2021-04-24 12:47:51,116 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': ''}
+2021-04-24 12:48:03,366 INFO main.py /calendar
+2021-04-24 12:48:03,366 INFO main.py Нам пришёл post-запрос: {'name': '1', 'email': '', 'phone': ''}
+2021-04-24 12:48:08,710 INFO main.py /calendar
+2021-04-24 12:48:08,711 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': 'w', 'phone': ''}
+2021-04-24 12:48:12,588 INFO main.py /calendar
+2021-04-24 12:48:12,588 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '1'}
+2021-04-24 12:48:22,922 INFO main.py /calendar
+2021-04-24 12:48:22,923 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'location': 'ac'}
+2021-04-24 19:57:34,313 INFO main.py /
+2021-04-24 19:57:34,314 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:34,583 INFO main.py /favicon.ico
+2021-04-24 19:57:34,583 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:36,763 INFO main.py /
+2021-04-24 19:57:36,763 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:37,899 INFO main.py /direction
+2021-04-24 19:57:37,900 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:39,395 INFO main.py /
+2021-04-24 19:57:39,396 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:40,670 INFO main.py /calendar
+2021-04-24 19:57:40,670 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:42,518 INFO main.py /
+2021-04-24 19:57:42,518 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:44,015 INFO main.py /contacts
+2021-04-24 19:57:44,016 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:50,729 INFO main.py /
+2021-04-24 19:57:50,730 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:52,835 INFO main.py /contacts
+2021-04-24 19:57:52,836 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:54,572 INFO main.py /
+2021-04-24 19:57:54,572 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 19:57:56,106 INFO main.py /calendar
+2021-04-24 19:57:56,106 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:18:38,141 INFO main.py /calendar
+2021-04-24 20:18:38,141 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 20:19:17,795 INFO main.py /calendar
+2021-04-24 20:19:17,795 INFO main.py Нам пришли GET-параметры: {'name': 'zheka', 'phone': '9999'}
+2021-04-24 20:21:20,639 INFO main.py /calendar
+2021-04-24 20:21:20,640 INFO main.py Нам пришёл post-запрос: {'name': '333', 'email': 'w$5', 'phone': 'qwe'}
+2021-04-24 20:21:37,587 INFO main.py /calendar
+2021-04-24 20:21:37,588 INFO main.py Нам пришёл post-запрос: {'name': '1221', 'email': 'adasds', 'phone': '56+4565465', 'location': 'ct', 'member': 'no'}
+2021-04-24 20:40:02,176 INFO main.py /
+2021-04-24 20:40:02,176 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:40:02,468 INFO main.py /favicon.ico
+2021-04-24 20:40:02,469 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:40:07,038 INFO main.py /calendar
+2021-04-24 20:40:07,038 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:40:15,259 INFO main.py /calendar
+2021-04-24 20:40:15,259 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': ''}
+2021-04-24 20:41:39,306 INFO main.py /
+2021-04-24 20:41:39,307 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:41:40,998 INFO main.py /about
+2021-04-24 20:41:40,999 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:41:42,711 INFO main.py /
+2021-04-24 20:41:42,711 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:41:43,678 INFO main.py /contacts
+2021-04-24 20:41:43,678 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:41:46,672 INFO main.py /
+2021-04-24 20:41:46,673 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:41:47,641 INFO main.py /calendar
+2021-04-24 20:41:47,641 INFO main.py Нам пришли GET-параметры: {}
+2021-04-24 20:41:49,435 INFO main.py /
+2021-04-24 20:41:49,435 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:33,127 INFO main.py /
+2021-04-25 14:16:33,128 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:33,416 INFO main.py /favicon.ico
+2021-04-25 14:16:33,417 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:43,341 INFO main.py /
+2021-04-25 14:16:43,341 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:45,015 INFO main.py /direction
+2021-04-25 14:16:45,016 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:46,827 INFO main.py /
+2021-04-25 14:16:46,827 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:47,467 INFO main.py /calendar
+2021-04-25 14:16:47,467 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:50,357 INFO main.py /
+2021-04-25 14:16:50,358 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:51,981 INFO main.py /contacts
+2021-04-25 14:16:51,982 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:55,625 INFO main.py /
+2021-04-25 14:16:55,625 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:16:59,076 INFO main.py /contacts
+2021-04-25 14:16:59,077 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:17:01,337 INFO main.py /
+2021-04-25 14:17:01,337 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:17:02,917 INFO main.py /contacts
+2021-04-25 14:17:02,918 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:17:04,752 INFO main.py /
+2021-04-25 14:17:04,752 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:17:10,321 INFO main.py /contacts
+2021-04-25 14:17:10,321 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:22:34,954 INFO main.py /contacts
+2021-04-25 14:22:34,955 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:23:27,415 INFO main.py /contacts
+2021-04-25 14:23:27,415 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:23:38,886 INFO main.py /contacts
+2021-04-25 14:23:38,886 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:23:49,569 INFO main.py /contacts
+2021-04-25 14:23:49,570 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:23:53,337 INFO main.py /contacts
+2021-04-25 14:23:53,337 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:25:12,563 INFO main.py /contacts
+2021-04-25 14:25:12,563 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:25:16,433 INFO main.py /
+2021-04-25 14:25:16,433 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:25:19,087 INFO main.py /contacts
+2021-04-25 14:25:19,088 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:25:20,563 INFO main.py /
+2021-04-25 14:25:20,564 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:25:21,675 INFO main.py /calendar
+2021-04-25 14:25:21,676 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:27:15,558 INFO main.py /
+2021-04-25 14:27:15,559 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:27:19,065 INFO main.py /contacts
+2021-04-25 14:27:19,065 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:27:32,552 INFO main.py /
+2021-04-25 14:27:32,552 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:29:04,815 INFO main.py /
+2021-04-25 14:29:04,815 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:29:05,639 INFO main.py /contacts
+2021-04-25 14:29:05,639 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:29:06,714 INFO main.py /contacts
+2021-04-25 14:29:06,714 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:29:12,668 INFO main.py /contacts
+2021-04-25 14:29:12,669 INFO main.py Нам пришёл post-запрос: {'feedback': 'ггшщункгшщ нгшщ ш', 'email': '', 'phone': '', 'send': 'Отправить'}
+2021-04-25 14:30:01,857 INFO main.py /contacts
+2021-04-25 14:30:01,857 INFO main.py Нам пришёл post-запрос: {'feedback': 'привет', 'email': '1@ru', 'phone': '9011', 'send': 'Отправить'}
+2021-04-25 14:30:29,482 INFO main.py /contacts
+2021-04-25 14:30:29,483 INFO main.py Нам пришёл post-запрос: {'feedback': 'привет', 'email': '1@ru', 'phone': '9011', 'send': 'Отправить'}
+2021-04-25 14:32:09,953 INFO main.py /contacts
+2021-04-25 14:32:09,953 INFO main.py Нам пришёл post-запрос: {'feedback': 'привет', 'email': '1@ru', 'phone': '9011', 'send': 'Отправить'}
+2021-04-25 14:32:16,831 INFO main.py /
+2021-04-25 14:32:16,832 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:32:18,716 INFO main.py /about
+2021-04-25 14:32:18,716 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:32:19,900 INFO main.py /
+2021-04-25 14:32:19,901 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:32:21,112 INFO main.py /contacts
+2021-04-25 14:32:21,112 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:32:29,776 INFO main.py /contacts
+2021-04-25 14:32:29,776 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:33:44,369 INFO main.py /contacts
+2021-04-25 14:33:44,369 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:33:55,654 INFO main.py /
+2021-04-25 14:33:55,655 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:33:57,496 INFO main.py /calendar
+2021-04-25 14:33:57,496 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:35:58,062 INFO main.py /calendar
+2021-04-25 14:35:58,062 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:36:00,267 INFO main.py /
+2021-04-25 14:36:00,267 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:36:02,432 INFO main.py /contacts
+2021-04-25 14:36:02,432 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:36:05,953 INFO main.py /contacts
+2021-04-25 14:36:05,954 INFO main.py Нам пришёл post-запрос: {'feedback': '', 'email': '', 'phone': '', 'send': 'Отправить'}
+2021-04-25 14:36:11,621 INFO main.py /contacts
+2021-04-25 14:36:11,621 INFO main.py Нам пришёл post-запрос: {'feedback': 'wqwewee', 'email': 'werwe', 'phone': 'wewre', 'send': 'Отправить'}
+2021-04-25 14:37:17,228 INFO main.py /contacts
+2021-04-25 14:37:17,228 INFO main.py Нам пришёл post-запрос: {'feedback': '', 'email': '', 'phone': '', 'send': 'Отправить'}
+2021-04-25 14:37:42,033 INFO main.py /
+2021-04-25 14:37:42,034 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:37:46,707 INFO main.py /contacts
+2021-04-25 14:37:46,708 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:37:54,656 INFO main.py /contacts
+2021-04-25 14:37:54,656 INFO main.py Нам пришёл post-запрос: {'feedback': 'q', 'email': 'q', 'phone': 'q', 'send': 'Отправить'}
+2021-04-25 14:38:53,054 INFO main.py /
+2021-04-25 14:38:53,055 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:38:55,686 INFO main.py /contacts
+2021-04-25 14:38:55,686 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:21,548 INFO main.py /
+2021-04-25 14:39:21,548 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:24,036 INFO main.py /calendar
+2021-04-25 14:39:24,036 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:25,004 INFO main.py /calendar
+2021-04-25 14:39:25,004 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': ''}
+2021-04-25 14:39:31,391 INFO main.py /
+2021-04-25 14:39:31,391 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:33,032 INFO main.py /contacts
+2021-04-25 14:39:33,033 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:34,386 INFO main.py /
+2021-04-25 14:39:34,386 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:35,809 INFO main.py /contacts
+2021-04-25 14:39:35,810 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:36,810 INFO main.py /contacts
+2021-04-25 14:39:36,810 INFO main.py Нам пришёл post-запрос: {'feedback': '', 'email': '', 'phone': '', 'send': 'Отправить'}
+2021-04-25 14:39:44,956 INFO main.py /
+2021-04-25 14:39:44,957 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:47,389 INFO main.py /calendar
+2021-04-25 14:39:47,389 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:52,878 INFO main.py /
+2021-04-25 14:39:52,878 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:39:54,323 INFO main.py /contacts
+2021-04-25 14:39:54,323 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:40:07,415 INFO main.py /contacts
+2021-04-25 14:40:07,415 INFO main.py Нам пришёл post-запрос: {'feedback': "fsef'rsl;krl;r';lg'erlk'kgk", 'email': 'qwdqw', 'phone': 'qwdqw', 'send': 'Отправить'}
+2021-04-25 14:44:00,639 INFO main.py /
+2021-04-25 14:44:00,640 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:44:05,936 INFO main.py /contacts
+2021-04-25 14:44:05,936 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:44:13,981 INFO main.py /contacts
+2021-04-25 14:44:13,981 INFO main.py Нам пришёл post-запрос: {'feedback': 'цйцу', 'email': 'цйу', 'phone': 'цуй', 'send': 'Отправить'}
+2021-04-25 14:47:28,272 INFO main.py /contacts
+2021-04-25 14:47:28,273 INFO main.py Нам пришёл post-запрос: {'feedback': 'цйцу', 'email': 'цйу', 'phone': 'цуй', 'send': 'Отправить'}
+2021-04-25 14:47:44,547 INFO main.py /contacts
+2021-04-25 14:47:44,548 INFO main.py Нам пришёл post-запрос: {'name': 'Zheka', 'feedback': 'Test', 'email': 'test@ru', 'phone': '8911', 'send': 'Отправить'}
+2021-04-25 14:48:51,706 INFO main.py /
+2021-04-25 14:48:51,706 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:48:52,954 INFO main.py /contacts
+2021-04-25 14:48:52,954 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:50:37,046 INFO main.py /contacts
+2021-04-25 14:50:37,046 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:57:20,091 INFO main.py /
+2021-04-25 14:57:20,092 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:57:21,127 INFO main.py /contacts
+2021-04-25 14:57:21,128 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:57:31,451 INFO main.py /
+2021-04-25 14:57:31,452 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:57:36,710 INFO main.py /contacts
+2021-04-25 14:57:36,710 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:58:29,768 INFO main.py /
+2021-04-25 14:58:29,768 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:58:51,033 INFO main.py /contacts
+2021-04-25 14:58:51,034 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 14:59:01,575 INFO main.py /contacts
+2021-04-25 14:59:01,575 INFO main.py Нам пришёл post-запрос: {'name': '1', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 14:59:01,575 INFO main.py пришел запрос обратной связи:{'name': '1', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:01:03,875 INFO main.py /contacts
+2021-04-25 15:01:03,875 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:01:03,875 INFO main.py пришел запрос обратной связи:{'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:02:03,684 INFO main.py /contacts
+2021-04-25 15:02:03,685 INFO main.py Нам пришёл post-запрос: {'name': '1', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:02:03,685 INFO main.py пришел запрос обратной связи:{'name': '1', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:02:21,814 INFO main.py /contacts
+2021-04-25 15:02:21,815 INFO main.py Нам пришёл post-запрос: {'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:02:21,815 INFO main.py пришел запрос обратной связи:{'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:05:09,920 INFO main.py /contacts
+2021-04-25 15:05:09,920 INFO main.py Нам пришёл post-запрос: {'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:05:09,921 INFO main.py пришел запрос обратной связи:{'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:05:33,069 INFO main.py /contacts
+2021-04-25 15:05:33,069 INFO main.py Нам пришёл post-запрос: {'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:05:33,070 INFO main.py пришел запрос обратной связи:{'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:10:33,681 INFO main.py /contacts
+2021-04-25 15:10:33,681 INFO main.py Нам пришёл post-запрос: {'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:10:33,682 INFO main.py пришел запрос обратной связи:{'name': 'nam', 'email': 'ema', 'phone': '11', 'feedback': '1q', 'send': 'Отправить'}
+2021-04-25 15:11:25,359 INFO main.py /contacts
+2021-04-25 15:11:25,360 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:11:25,360 INFO main.py пришел запрос обратной связи:{'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:12:15,911 INFO main.py /contacts
+2021-04-25 15:12:15,911 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:12:15,912 INFO main.py пришел запрос обратной связи:{'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:14:01,093 INFO main.py /contacts
+2021-04-25 15:14:01,093 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:14:17,043 INFO main.py /contacts
+2021-04-25 15:14:17,044 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:14:34,983 INFO main.py /contacts
+2021-04-25 15:14:34,984 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:14:54,757 INFO main.py /
+2021-04-25 15:14:54,758 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:14:56,467 INFO main.py /calendar
+2021-04-25 15:14:56,467 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:15:00,052 INFO main.py /calendar
+2021-04-25 15:15:00,053 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': ''}
+2021-04-25 15:16:50,127 INFO main.py /calendar
+2021-04-25 15:16:50,128 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': ''}
+2021-04-25 15:17:51,127 INFO main.py /calendar
+2021-04-25 15:17:51,127 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': ''}
+2021-04-25 15:18:03,581 INFO main.py /calendar
+2021-04-25 15:18:03,581 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '1', 'phone': '', 'course': ''}
+2021-04-25 15:19:16,024 INFO main.py /calendar
+2021-04-25 15:19:16,024 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '1', 'phone': '', 'course': ''}
+2021-04-25 15:19:56,034 INFO main.py /calendar
+2021-04-25 15:19:56,035 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'send': 'Регистрация'}
+2021-04-25 15:20:20,424 INFO main.py /
+2021-04-25 15:20:20,425 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:20:21,855 INFO main.py /contacts
+2021-04-25 15:20:21,855 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:20:22,823 INFO main.py /contacts
+2021-04-25 15:20:22,823 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:20:22,823 INFO main.py Сформирован словарь обратной связи: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:21:05,923 INFO main.py /contacts
+2021-04-25 15:21:05,923 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:21:05,923 INFO main.py Сформирован словарь обратной связи: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send': 'Отправить'}
+2021-04-25 15:21:14,563 INFO main.py /
+2021-04-25 15:21:14,563 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:21:16,038 INFO main.py /contacts
+2021-04-25 15:21:16,038 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:21:21,937 INFO main.py /contacts
+2021-04-25 15:21:21,937 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send_feedback': 'Отправить'}
+2021-04-25 15:21:21,938 INFO main.py Сформирован словарь обратной связи: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send_feedback': 'Отправить'}
+2021-04-25 15:22:30,150 INFO main.py /
+2021-04-25 15:22:30,150 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:22:31,378 INFO main.py /calendar
+2021-04-25 15:22:31,379 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:22:33,400 INFO main.py /calendar
+2021-04-25 15:22:33,400 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:24:26,964 INFO main.py /calendar
+2021-04-25 15:24:26,964 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:24:26,964 INFO main.py Сформирован словарь обратной связи: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:24:57,272 INFO main.py /calendar
+2021-04-25 15:24:57,272 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:24:57,273 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:25:16,985 INFO main.py /calendar
+2021-04-25 15:25:16,986 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:25:16,986 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:26:37,490 INFO main.py /calendar
+2021-04-25 15:26:37,491 INFO main.py Нам пришёл post-запрос: {'name': '112123', 'email': '23123', 'phone': '2312', 'course': '2312', 'location': 'ac', 'member': 'yes', 'send_registration': 'Регистрация'}
+2021-04-25 15:26:37,491 INFO main.py Сформирован словарь запроса на курсы: {'name': '112123', 'email': '23123', 'phone': '2312', 'user_filial': '', 'member': 'yes', 'course': '2312', 'location': 'ac', 'send_registration': 'Регистрация'}
+2021-04-25 15:29:07,002 INFO main.py /calendar
+2021-04-25 15:29:07,002 INFO main.py Нам пришёл post-запрос: {'name': '112123', 'email': '23123', 'phone': '2312', 'course': '2312', 'location': 'ac', 'member': 'yes', 'send_registration': 'Регистрация'}
+2021-04-25 15:29:07,003 INFO main.py Сформирован словарь запроса на курсы: {'name': '112123', 'email': '23123', 'phone': '2312', 'user_filial': '', 'member': 'yes', 'course': '2312', 'location': 'ac', 'send_registration': 'Регистрация'}
+2021-04-25 15:29:11,924 INFO main.py /calendar
+2021-04-25 15:29:11,925 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:29:11,925 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:32:27,104 INFO main.py /calendar
+2021-04-25 15:32:27,104 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:32:27,105 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:34:46,861 INFO main.py /calendar
+2021-04-25 15:34:46,861 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:34:46,861 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:35:11,794 INFO main.py /calendar
+2021-04-25 15:35:11,795 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:35:11,795 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:36:31,290 INFO main.py /calendar
+2021-04-25 15:36:31,291 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:36:31,291 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'course2': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 15:36:45,227 INFO main.py /calendar
+2021-04-25 15:36:45,227 INFO main.py Нам пришёл post-запрос: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'course': 'r1', 'location': 'ac', 'member': 'no', 'send_registration': 'Регистрация'}
+2021-04-25 15:36:45,228 INFO main.py Сформирован словарь запроса на курсы: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'user_filial': '', 'member': 'no', 'course': 'r1', 'location': 'ac', 'send_registration': 'Регистрация'}
+2021-04-25 15:39:43,291 INFO main.py /calendar
+2021-04-25 15:39:43,291 INFO main.py Нам пришёл post-запрос: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'course': 'r1', 'location': 'ac', 'member': 'no', 'send_registration': 'Регистрация'}
+2021-04-25 15:39:43,291 INFO main.py Сформирован словарь запроса на курсы: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'user_filial': '', 'member': 'no', 'course': 'r1', 'location': 'ac', 'send_registration': 'Регистрация'}
+2021-04-25 15:40:42,333 INFO main.py /calendar
+2021-04-25 15:40:42,333 INFO main.py Нам пришёл post-запрос: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'course': 'r1', 'location': 'ac', 'member': 'no', 'send_registration': 'Регистрация'}
+2021-04-25 15:40:42,334 INFO main.py Сформирован словарь запроса на курсы: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'user_filial': '', 'member': 'no', 'course': 'r1', 'location': 'ac', 'send_registration': 'Регистрация'}
+2021-04-25 15:42:00,390 INFO main.py /calendar
+2021-04-25 15:42:00,391 INFO main.py Нам пришёл post-запрос: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'course': 'r1', 'location': 'ac', 'member': 'no', 'send_registration': 'Регистрация'}
+2021-04-25 15:42:00,391 INFO main.py Сформирован словарь запроса на курсы: {'name': 'йц', 'email': '2ж22ж', 'phone': '227', 'user_filial': '', 'member': 'no', 'course': 'r1', 'location': 'ac', 'send_registration': 'Регистрация'}
+2021-04-25 15:42:12,121 INFO main.py /
+2021-04-25 15:42:12,123 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:42:13,271 INFO main.py /contacts
+2021-04-25 15:42:13,271 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:42:14,716 INFO main.py /contacts
+2021-04-25 15:42:14,717 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send_feedback': 'Отправить'}
+2021-04-25 15:42:14,717 INFO main.py Сформирован словарь обратной связи: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send_feedback': 'Отправить'}
+2021-04-25 15:42:45,703 INFO main.py /
+2021-04-25 15:42:45,704 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:42:47,853 INFO main.py /calendar
+2021-04-25 15:42:47,853 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:42:50,204 INFO main.py /calendar
+2021-04-25 15:42:50,204 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:42:50,204 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'send_registration': 'Регистрация'}
+2021-04-25 15:42:54,301 INFO main.py /
+2021-04-25 15:42:54,301 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:42:56,185 INFO main.py /contacts
+2021-04-25 15:42:56,185 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 15:42:58,878 INFO main.py /contacts
+2021-04-25 15:42:58,878 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send_feedback': 'Отправить'}
+2021-04-25 15:42:58,879 INFO main.py Сформирован словарь обратной связи: {'name': '', 'email': '', 'phone': '', 'feedback': '', 'send_feedback': 'Отправить'}
+2021-04-25 17:58:12,540 INFO main.py /
+2021-04-25 17:58:12,541 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:12,822 INFO main.py /favicon.ico
+2021-04-25 17:58:12,822 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:14,718 INFO main.py /
+2021-04-25 17:58:14,718 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:16,360 INFO main.py /direction
+2021-04-25 17:58:16,360 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:18,594 INFO main.py /
+2021-04-25 17:58:18,594 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:20,265 INFO main.py /calendar
+2021-04-25 17:58:20,266 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:25,387 INFO main.py /calendar
+2021-04-25 17:58:25,387 INFO main.py Нам пришёл post-запрос: {'name': '', 'email': '', 'phone': '', 'course': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 17:58:25,387 INFO main.py Сформирован словарь запроса на курсы: {'name': '', 'email': '', 'phone': '', 'user_filial': '', 'member': '', 'course': 'r1', 'send_registration': 'Регистрация'}
+2021-04-25 17:58:29,049 INFO main.py /
+2021-04-25 17:58:29,050 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:30,808 INFO main.py /contacts
+2021-04-25 17:58:30,808 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:34,582 INFO main.py /
+2021-04-25 17:58:34,583 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:35,425 INFO main.py /about
+2021-04-25 17:58:35,425 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 17:58:37,299 INFO main.py /
+2021-04-25 17:58:37,299 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 18:00:12,212 INFO main.py /
+2021-04-25 18:00:12,213 INFO main.py Нам пришли GET-параметры: {}
+2021-04-25 18:00:12,507 INFO main.py /favicon.ico
+2021-04-25 18:00:12,507 INFO main.py Нам пришли GET-параметры: {}

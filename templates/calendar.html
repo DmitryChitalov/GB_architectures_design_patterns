@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>Расписание</title>
-	<style type="text/css">
+<style type="text/css">
 			body {
-				font-family: Arial, Verdana, sans-serif;
-				font-size: 90%;
-				color: #666;
-				background-color: #f8f8f8;}
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 90%;
+	color: #666;
+}
 			li {
 				list-style-image: url("images/icon-plus.png");
 				line-height: 1.6em;}
@@ -36,7 +36,8 @@
 	letter-spacing: 0.15em;
 }
 			td {
-				text-shadow: 1px 1px 1px #ffffff;}
+	font-family: Arial, Verdana, sans-serif;
+}
 			tr.even td, tr.even th {
 				background-color: #e8eff5;}
 			tr.head th:first-child {
@@ -99,12 +100,18 @@
 }
     .headmenu {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #000;
-	text-decoration: underline;
-	background-color: #F90;
+	background-color: #FF9900;
 	text-align: center;
+	color: #000;	
 }
-    </style>
+
+A:link {text-decoration: none; /* Убирает подчеркивание для ссылок */} 
+   A:visited { text-decoration: none; } 
+   A:active { text-decoration: none; }
+   A:hover {text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: red; /* Цвет ссылки */} 
+
+</style>
 </head>
 	<body>
 	<h1>LegoCode</h1>
@@ -114,7 +121,7 @@
 			<tr class="head">
 				<th></th>
 				<th>LegoCode<br>
-			    юго-Западный филиал</th>
+			    Юго-Западный филиал</th>
 				<th>LegoCode<br>
 Академичесий<br>
 филиал</th>
@@ -160,30 +167,42 @@
 14:00 - 15:30</td>
 			</tr>
 		</table>
-		<form action="" method="post">
+		<form action="" method="post" id="registration">
 			<fieldset>
-			  <legend>Регистрация на курсы</legend>
-				<p>
-					 <label class="title" for="name">Ваше имя:</label>
-					 <input type="text" name="name" id="name"><br />
-					 <label class="title" for="email">Ваш email:</label>
-					 <input type="text" name="email" id="email">
-					 <label class="title" for="email">Телефон:</label>
-					 <input type="text" name="phone" id="phone">
-					 <br>
-				</p>
+			  <legend>Регистрация на занятия</legend>
+			  <p>
+	    	    <label class="title" for="name">Ваше имя:</label>
+			 <input type="text" name="name" id="name"><br />
+			    <label class="title" for="email">Ваш email:</label>
+			    <input type="text" name="email" id="email">
+			    <label class="title" for="phone">Телефон:</label>
+			    <input type="text" name="phone" id="phone">
+			  </p>
+			  <p>
+			    <label for="course" class="title">Выберите курс</label>
+			    <select name="course" id="course">
+			      <option selected disabled>Выберите курс:</option>
+			      <option value="r1">Робототехника-1</option>
+			      <option value="r2">Робототехника-2</option>
+			      <option value="u1">Юные программмисты-1</option>
+			      <option value="u2">Юные программмисты-2</option>
+		        </select>
+			    <br>
+		      </p>
 				<p>
 				  <label for="location" class="title">Удобный филиал: </label>
 					 <select name="location" id="location">
+					   <option selected disabled>Выберите филиал</option>
 					   <option value="ac">LegoCode - Академический</option>
 					   <option value="yz">LegoCode - ЮЗ</option>
 					   <option value="ct">LegoCode - Центр</option>
-                     </select></p>
-				<span class="title">Являетесь участником?</span>
+              		 </select>
+                </p>
+				<span class="title">Уже наш клиент? </span>
 				<label><input type="radio" name="member" value="yes" /> Да</label>
 				<label><input type="radio" name="member" value="no" /> Нет</label></p>
 			</fieldset>
- 	    <div class="submit"><input type="submit" value="Регистрация" /></div>
+ 	    <div class="submit"><input name="send_registration" type="submit" id="send_registration" value="Регистрация" /></div>
 		</form>
 		<hr>
 		<table border="0">

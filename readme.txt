@@ -5,3 +5,4 @@
 	python run.py
 - открыть в браузере страницу
 	http://localhost:8080/
+

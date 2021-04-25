@@ -1,9 +1,10 @@
 from bubles_framework.main import FrameworkBase
 from urls import routes, fronts
 from wsgiref.simple_server import make_server
+from variables import PORT
 
 application = FrameworkBase(routes, fronts)
 
-with make_server('', 8080, application) as httpd:
-    print("Запуск на порту 8080...")
+with make_server('', PORT, application) as httpd:
+    print(f"Starting on port {PORT}...")
     httpd.serve_forever()

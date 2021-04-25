@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<title>Школа программирования</title>
-	<style type="text/css">
+<title>Школа робототехники</title>
+<style type="text/css">
 			body {
-				font-family: Arial, Verdana, sans-serif;
-				font-size: 90%;
-				color: #666;
-				background-color: #f8f8f8;}
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 90%;
+	color: #666;
+}
 			li {
 				list-style-image: url("images/icon-plus.png");
 				line-height: 1.6em;}
@@ -36,7 +36,8 @@
 	letter-spacing: 0.15em;
 }
 			td {
-				text-shadow: 1px 1px 1px #ffffff;}
+	font-family: Arial, Verdana, sans-serif;
+}
 			tr.even td, tr.even th {
 				background-color: #e8eff5;}
 			tr.head th:first-child {
@@ -99,22 +100,29 @@
 }
     .headmenu {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #000;
-	text-decoration: underline;
-	background-color: #F90;
+	background-color: #FF9900;
 	text-align: center;
+	color: #000;	
 }
-    </style>
+
+A:link {text-decoration: none; /* Убирает подчеркивание для ссылок */} 
+   A:visited { text-decoration: none; } 
+   A:active { text-decoration: none; }
+   A:hover {text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: red; /* Цвет ссылки */} 
+
+</style>
+<meta charset="utf-8">
 </head>
 	<body>
 <table border="0">
   <tr>
 	<td bgcolor="#000000"><h1>LegoCode</h1></td>
-	<td class="headmenu"><h2><a href="/">Новости</a></h2></td>
-    <td class="headmenu"><h2><a href="direction">Направления</a></h2></td>
-    <td class="headmenu"><h2><a href="calendar">Расписание</a></h2></td>
-    <td class="headmenu"><h2><a href="contacts">Контакты</a></h2></td>
-    <td class="headmenu"><h2><a href="about">О проекте</a></h2></td>
+	<td class="headmenu"><h2><a href="/" class="headmenu">Новости</a></h2></td>
+    <td class="headmenu"><h2><a href="direction" class="headmenu">Направления</a></h2></td>
+    <td class="headmenu"><h2><a href="calendar" class="headmenu">Расписание</a></h2></td>
+    <td class="headmenu"><h2><a href="contacts" class="headmenu">Контакты</a></h2></td>
+    <td class="headmenu"><h2><a href="about" class="headmenu">О проекте</a></h2></td>
   </tr>
     </table>
 		<hr>
@@ -122,7 +130,6 @@
     
     Опубликовано {{data}} 
     <p>Пока новостей нет.</p>
-    
     <p>&nbsp;</p>
 	<hr>
 </body>
