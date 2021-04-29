@@ -22,3 +22,5 @@ course_dict = {'r1': 'Робототехника-1',
 
 html_id_dicts = {'name': 'Имя', 'email': 'e-mail', 'phone': 'телефон', 'feedback': 'текст сообщения', 'course': 'курс'
     , 'location': 'филиал', 'member': 'уже наш клиент'}
+
+logo='lego_model.png'

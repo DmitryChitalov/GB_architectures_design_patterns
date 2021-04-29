@@ -3,7 +3,7 @@ from bubles_framework.templator import render
 
 class Index:
     def __call__(self, request):
-        return '200 OK', render('index.html', data=request.get('data', None))
+        return '200 OK', render('index.html', data=request.get('data', None), logo=request.get('logo', None))
 
 
 class About:
