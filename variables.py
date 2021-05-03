@@ -24,3 +24,5 @@ html_id_dicts = {'name': 'Имя', 'email': 'e-mail', 'phone': 'телефон',
     , 'location': 'филиал', 'member': 'уже наш клиент'}
 
 logo='lego_model.png'
+
+COURSE_CATEGORIE={1:'Конструирование', 2:'Робототехника', 3:'Электроиника', 4:'Программирование'}

@@ -1,11 +1,10 @@
 import quopri
+from bubles_framework.requests import GetRequests, PostRequests
 import logging
-from bubles_framework.request_processor import GetRequests, PostRequests
 import config_server_log
 from variables import filial, course_dict, html_id_dicts
 
 server_logger = logging.getLogger('server')
-
 
 class PageNotFound404:
     def __call__(self, request):
@@ -13,18 +12,16 @@ class PageNotFound404:
 
 
 class FrameworkBase:
+
     """Класс Framework - основа фреймворка"""
 
-    def __init__(self, routes_object, fronts_object):
-        self.routes_list = routes_object
-        self.fronts_lst = fronts_object
+    def __init__(self, routes_obj, fronts_obj):
+        self.routes_lst = routes_obj
+        self.fronts_lst = fronts_obj
 
     def __call__(self, environ, start_response):
-        # server_logger.debug(environ)
         # получаем адрес, по которому выполнен переход
         path = environ['PATH_INFO']
-        server_logger.info(f'{path}')
-        # print(environ)
 
         # добавление закрывающего слеша
         if not path.endswith('/'):
@@ -33,6 +30,7 @@ class FrameworkBase:
         request = {}
         # Получаем все данные запроса
         method = environ['REQUEST_METHOD']
+
         request['method'] = method
 
         if method == 'POST':
@@ -41,30 +39,29 @@ class FrameworkBase:
             request_data = FrameworkBase.decode_value(data)
             # print(f'Нам пришёл post-запрос: {FrameworkBase.decode_value(data)}')
             server_logger.info(f'Нам пришёл post-запрос: {request_data}')
-            OutResult(request_data)
 
         if method == 'GET':
             request_params = GetRequests().get_request_params(environ)
             request['request_params'] = request_params
             # print(f'Нам пришли GET-параметры: {request_params}')
             server_logger.info(f'Нам пришли GET-параметры: {request_params}')
-            request_data = request_params
-            OutResult(request_data)
 
         # находим нужный контроллер
         # отработка паттерна page controller
-        if path in self.routes_list:
-            view = self.routes_list[path]
+        if path in self.routes_lst:
+            view = self.routes_lst[path]
         else:
-            view = self.routes_list['/page_not_found_404/']
             # view = PageNotFound404()
-        request = {}
+            path = '/page_not_found_404/'
+            view = self.routes_lst[path]
+
         # наполняем словарь request элементами
         # этот словарь получат все контроллеры
         # отработка паттерна front controller
         for front in self.fronts_lst:
             front(request)
         # запуск контроллера с передачей объекта request
+
         code, body = view(request)
         start_response(code, [('Content-Type', 'text/html')])
         return [body.encode('utf-8')]
@@ -77,7 +74,6 @@ class FrameworkBase:
             val_decode_str = quopri.decodestring(val).decode('UTF-8')
             new_data[k] = val_decode_str
         return new_data
-
 
 def OutResult(request_data):
     user_data={}
