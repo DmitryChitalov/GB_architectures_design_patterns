@@ -14,6 +14,7 @@ def other_front(request):
 
 fronts = [secret_front, other_front]
 
+"""
 routes = {
     '/': Index(),
     '/about/': About(),
@@ -29,3 +30,4 @@ routes = {
     '/courses/': Courses(),
     '/page_not_found_404/': NotFound404()
 }
+"""

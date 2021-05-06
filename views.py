@@ -2,30 +2,43 @@ from datetime import date
 
 from bubles_framework.templator import render
 from patterns.сreational_patterns import Engine, Logger
+from patterns.structural_patterns import AddRoute, DebugMethod
+
 
 site = Engine()
 logger = Logger('main')
 
+routes={}
 
-# контроллер - главная страница
+@AddRoute(routes=routes, url='/')
 class Index:
+    @DebugMethod(name='Index')
     def __call__(self, request):
-        return '200 OK', render('index.html', data=date.today())
+        return '200 OK', render('index.html', objects_list=site.categories)
 
-
-# контроллер "О проекте"
+@AddRoute(routes=routes, url='/about/')
 class About:
+    @DebugMethod(name='About')
     def __call__(self, request):
         return '200 OK', render('about.html')
 
 
-# контроллер - Расписания
+@AddRoute(routes=routes, url='/study_programs/')
 class StudyPrograms:
+    @DebugMethod(name='StudyPrograms')
     def __call__(self, request):
         return '200 OK', render('study-programs.html', data=date.today())
 
-# контроллер - список курсов
+
+class NotFound404:
+    @DebugMethod(name='NotFound404')
+    def __call__(self, request):
+        return '404 WHAT', render('page_not_found_404.html')
+
+
+@AddRoute(routes=routes, url='/courses-list/')
 class CoursesList:
+    @DebugMethod(name='CoursesList')
     def __call__(self, request):
         logger.log('Список курсов')
         try:
@@ -35,10 +48,11 @@ class CoursesList:
             return '200 OK', 'No courses have been added yet'
 
 
-# контроллер - создать курс
+@AddRoute(routes=routes, url='/create-course/')
 class CreateCourse:
     category_id = -1
 
+    @DebugMethod(name='CreateCourse')
     def __call__(self, request):
         if request['method'] == 'POST':
             # метод пост
@@ -67,14 +81,14 @@ class CreateCourse:
                 return '200 OK', 'No categories have been added yet'
 
 
-# контроллер - создать категорию
+@AddRoute(routes=routes, url='/create-category/')
 class CreateCategory:
+    @DebugMethod(name='CreateCategory')
     def __call__(self, request):
-        # print(f'request={request}')
 
         if request['method'] == 'POST':
             # метод пост
-            # print(request)
+            print(request)
             data = request['data']
 
             name = data['name']
@@ -90,23 +104,23 @@ class CreateCategory:
 
             site.categories.append(new_category)
 
-            # return '200 OK', render('index.html', objects_list=site.categories)
             return '200 OK', render('courses.html', objects_list=site.categories)
-
         else:
             categories = site.categories
             return '200 OK', render('create_category.html', categories=categories)
 
 
-# контроллер - список категорий
+@AddRoute(routes=routes, url='/category-list/')
 class CategoryList:
+    @DebugMethod(name='CategoryList')
     def __call__(self, request):
         logger.log('Список категорий')
         return '200 OK', render('category_list.html', objects_list=site.categories)
 
 
-# контроллер - копировать курс
+@AddRoute(routes=routes, url='/copy-course/')
 class CopyCourse:
+    @DebugMethod(name='CopyCourse')
     def __call__(self, request):
         request_params = request['request_params']
 
@@ -124,37 +138,31 @@ class CopyCourse:
             return '200 OK', 'No courses have been added yet'
 
 
+@AddRoute(routes=routes, url='/contacts/')
 class Contacts:
+    @DebugMethod(name='Contacts')
     def __call__(self, request):
         return '200 OK', render('contacts.html')
 
 
+@AddRoute(routes=routes, url='/calendar/')
 class Calendar:
+    @DebugMethod(name='Calendar')
     def __call__(self, request):
         return '200 OK', render('calendar.html', data=date.today())
 
 
+@AddRoute(routes=routes, url='/courses/')
 class Courses:
+    @DebugMethod(name='Courses')
     def __call__(self, request):
         logger.log('Список категорий курсов')
         # print(site.categories)
         return '200 OK', render('courses.html', objects_list=site.categories)
 
 
+@AddRoute(routes=routes, url='/direction/')
 class Direction:
+    @DebugMethod(name='Direction')
     def __call__(self, request):
         return '200 OK', render('direction.html')
-
-
-class NotFound404:
-    def __call__(self, request):
-        return '404 WHAT', render('page_not_found_404.html')
-
-
-"""
-# контроллер 404
-class NotFound404:
-    def __call__(self, request):
-        return '404 WHAT', '404 PAGE Not Found'
-"""
-
