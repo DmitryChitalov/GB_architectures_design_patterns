@@ -3,10 +3,15 @@ from datetime import date
 from bubles_framework.templator import render
 from patterns.сreational_patterns import Engine, Logger
 from patterns.structural_patterns import AddRoute, DebugMethod
+from patterns.behavioral_patterns import EmailNotifier, SmsNotifier, \
+    TemplateView, ListView, CreateView, BaseSerializer
 
 
 site = Engine()
 logger = Logger('main')
+
+email_notifier = EmailNotifier()
+sms_notifier = SmsNotifier()
 
 routes={}
 
@@ -66,11 +71,13 @@ class CreateCourse:
                 category = site.find_category_by_id(int(self.category_id))
 
                 course = site.create_course('record', name, category)
+                # Добавляем наблюдателей на курс
+                course.observers.append(email_notifier)
+                course.observers.append(sms_notifier)
                 site.courses.append(course)
 
             return '200 OK', render('course_list.html', objects_list=category.courses,
                                     name=category.name, id=category.id)
-
         else:
             try:
                 self.category_id = int(request['request_params']['id'])
@@ -136,6 +143,51 @@ class CopyCourse:
             return '200 OK', render('course_list.html', objects_list=site.courses)
         except KeyError:
             return '200 OK', 'No courses have been added yet'
+
+
+@AddRoute(routes=routes, url='/student-list/')
+class StudentListView(ListView):
+    queryset = site.students
+    template_name = 'student_list.html'
+
+
+@AddRoute(routes=routes, url='/create-student/')
+class StudentCreateView(CreateView):
+    template_name = 'create_student.html'
+
+    def create_obj(self, data: dict):
+        name = data['name']
+        name = site.decode_value(name)
+        new_obj = site.create_user('student', name)
+        site.students.append(new_obj)
+
+
+@AddRoute(routes=routes, url='/add-student/')
+class AddStudentByCourseCreateView(CreateView):
+    template_name = 'add_student.html'
+
+    def get_context_data(self):
+        context = super().get_context_data()
+        context['courses'] = site.courses
+        context['students'] = site.students
+        return context
+
+    def create_obj(self, data: dict):
+        course_name = data['course_name']
+        course_name = site.decode_value(course_name)
+        course = site.get_course(course_name)
+        student_name = data['student_name']
+        student_name = site.decode_value(student_name)
+        student = site.get_student(student_name)
+        course.add_student(student)
+
+
+@AddRoute(routes=routes, url='/api/')
+class CourseApi:
+    @DebugMethod(name='CourseApi')
+    def __call__(self, request):
+        return '200 OK', BaseSerializer(site.courses).save()
+
 
 
 @AddRoute(routes=routes, url='/contacts/')
