@@ -1,0 +1,103 @@
+2021-05-14 10:17:47,887 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:47,926 INFO structural_patterns.py DebugMethod --> Index performed 0.04 ms
+2021-05-14 10:17:48,140 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:48,285 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:48,457 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:49,332 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:49,352 INFO structural_patterns.py DebugMethod --> Index performed 0.02 ms
+2021-05-14 10:17:49,710 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:49,976 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:50,262 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:50,283 INFO structural_patterns.py DebugMethod --> Calendar performed 0.02 ms
+2021-05-14 10:17:50,631 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:50,885 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:52,411 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:52,421 INFO structural_patterns.py DebugMethod --> StudyPrograms performed 0.01 ms
+2021-05-14 10:17:52,766 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:53,034 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:54,859 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:54,876 INFO structural_patterns.py DebugMethod --> Calendar performed 0.02 ms
+2021-05-14 10:17:55,216 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:17:55,482 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:20:34,720 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:20:34,984 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:20:36,555 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:20:36,903 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:20:39,685 INFO main.py Нам пришёл post-запрос: {'name': 'q11'}
+2021-05-14 10:34:47,403 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:47,658 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:48,687 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:49,035 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:51,366 INFO main.py Нам пришёл post-запрос: {'name': 'q11'}
+2021-05-14 10:34:51,719 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:54,827 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:54,840 INFO structural_patterns.py DebugMethod --> Index performed 0.01 ms
+2021-05-14 10:34:55,181 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:55,431 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:56,985 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:34:57,339 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:02,209 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:02,583 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:05,209 INFO main.py Нам пришёл post-запрос: {'name': 'q233'}
+2021-05-14 10:35:05,556 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:12,482 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:12,847 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:15,201 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:15,219 INFO structural_patterns.py DebugMethod --> Courses performed 0.02 ms
+2021-05-14 10:35:15,554 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:17,066 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:17,077 INFO structural_patterns.py DebugMethod --> CreateCategory performed 0.01 ms
+2021-05-14 10:35:17,412 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:20,535 INFO main.py Нам пришёл post-запрос: {'name': 'qwqqwqew'}
+2021-05-14 10:35:20,552 INFO structural_patterns.py DebugMethod --> CreateCategory performed 0.02 ms
+2021-05-14 10:35:20,890 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:22,703 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:23,056 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:24,388 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:24,734 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:27,410 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:27,427 INFO structural_patterns.py DebugMethod --> Courses performed 0.02 ms
+2021-05-14 10:35:27,759 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:29,542 INFO main.py Нам пришли GET-параметры: {'id': '0'}
+2021-05-14 10:35:29,554 INFO structural_patterns.py DebugMethod --> CoursesList performed 0.01 ms
+2021-05-14 10:35:29,891 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:30,743 INFO main.py Нам пришли GET-параметры: {'id': '0'}
+2021-05-14 10:35:30,755 INFO structural_patterns.py DebugMethod --> CreateCourse performed 0.01 ms
+2021-05-14 10:35:31,100 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:33,504 INFO main.py Нам пришёл post-запрос: {'name': 'werrqwrq'}
+2021-05-14 10:35:33,518 INFO structural_patterns.py DebugMethod --> CreateCourse performed 0.01 ms
+2021-05-14 10:35:33,861 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:35,406 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:35,769 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:36,967 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:37,328 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:40,559 INFO main.py Нам пришёл post-запрос: {'course_name': 'werrqwrq', 'student_name': 'q11'}
+2021-05-14 10:35:40,925 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:42,121 INFO main.py Нам пришёл post-запрос: {'student_name': 'q233'}
+2021-05-14 10:35:45,183 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:45,205 INFO structural_patterns.py DebugMethod --> Courses performed 0.02 ms
+2021-05-14 10:35:45,436 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:47,163 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:47,526 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:49,836 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:50,197 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:52,545 INFO main.py Нам пришёл post-запрос: {'course_name': 'werrqwrq', 'student_name': 'q233'}
+2021-05-14 10:35:52,906 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:54,909 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:54,925 INFO structural_patterns.py DebugMethod --> Courses performed 0.01 ms
+2021-05-14 10:35:55,259 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:56,330 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:56,690 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:59,843 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:35:59,856 INFO structural_patterns.py DebugMethod --> Index performed 0.01 ms
+2021-05-14 10:36:00,197 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 10:36:00,465 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:03:57,448 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:03:57,470 INFO structural_patterns.py DebugMethod --> Index performed 0.02 ms
+2021-05-14 12:03:57,709 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:03:57,864 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:03:58,051 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:04:00,772 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:04:01,156 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:04:05,808 INFO main.py Нам пришли GET-параметры: {}
+2021-05-14 12:04:05,808 INFO structural_patterns.py DebugMethod --> CourseApi performed 0.00 ms

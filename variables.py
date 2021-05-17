@@ -5,6 +5,8 @@ LOGGING_LEVEL = logging.DEBUG
 # LOGGING_LEVEL = logging.INFO
 ENCODING = 'utf-8'
 
+SQLBD='legocode.sqlite'
+
 # словари соответствия
 filial = {
     'ac': 'LegoCode - Академический',
