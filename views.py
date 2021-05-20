@@ -3,19 +3,14 @@ from datetime import date
 from bubles_framework.templator import render
 from patterns.сreational_patterns import Engine, Logger, MapperRegistry
 from patterns.structural_patterns import AddRoute, DebugMethod
-from patterns.behavioral_patterns import EmailNotifier, SmsNotifier, \
-    TemplateView, ListView, CreateView, BaseSerializer
+from patterns.behavioral_patterns import EmailNotifier, SmsNotifier, TemplateView, ListView, CreateView, BaseSerializer
 from patterns.datamapper_patterns import UnitOfWork
-# from patterns.architectural_system_pattern_unit_of_work import UnitOfWork
-# from patterns.architectural_system_pattern_mappers import architectural_system_pattern_registry
 
 
 site = Engine()
 logger = Logger('main')
-
 email_notifier = EmailNotifier()
 sms_notifier = SmsNotifier()
-
 UnitOfWork.new_current()
 UnitOfWork.get_current().set_mapper_registry(MapperRegistry)
 
@@ -46,14 +41,24 @@ class NotFound404:
     def __call__(self, request):
         return '404 WHAT', render('page_not_found_404.html')
 
+"""
+@AddRoute(routes=routes, url='/courses-list/')
+class CoursesList(ListView):
+    template_name = 'course_list.html'
 
+    def get_queryset(self):
+        mapper = MapperRegistry.get_current_mapper('course')
+        return mapper.all()
+"""
 @AddRoute(routes=routes, url='/courses-list/')
 class CoursesList:
     @DebugMethod(name='CoursesList')
     def __call__(self, request):
         logger.log('Список курсов')
         try:
-            category = site.find_category_by_id(int(request['request_params']['id']))
+            # category = site.find_category_by_id(int(request['request_params']['id']))
+            category = site.find_category_by_id_mapper(int(request['request_params']['id']))
+            print(f'category.courses={category.courses} | category.name={category.name} | category.id={category.id}')
             return '200 OK', render('course_list.html', objects_list=category.courses, name=category.name, id=category.id)
         except KeyError:
             return '200 OK', 'No courses have been added yet'
@@ -92,43 +97,6 @@ class CreateCourse:
                 return '200 OK', render('create_course.html', name=category.name, id=category.id)
             except KeyError:
                 return '200 OK', 'No categories have been added yet'
-
-
-@AddRoute(routes=routes, url='/create-category/')
-class CreateCategory:
-    @DebugMethod(name='CreateCategory')
-    def __call__(self, request):
-
-        if request['method'] == 'POST':
-            # метод пост
-            print(request)
-            data = request['data']
-
-            name = data['name']
-            name = site.decode_value(name)
-
-            category_id = data.get('category_id')
-
-            category = None
-            if category_id:
-                category = site.find_category_by_id(int(category_id))
-
-            new_category = site.create_category(name, category)
-
-            site.categories.append(new_category)
-
-            return '200 OK', render('courses.html', objects_list=site.categories)
-        else:
-            categories = site.categories
-            return '200 OK', render('create_category.html', categories=categories)
-
-
-@AddRoute(routes=routes, url='/category-list/')
-class CategoryList:
-    @DebugMethod(name='CategoryList')
-    def __call__(self, request):
-        logger.log('Список категорий')
-        return '200 OK', render('category_list.html', objects_list=site.categories)
 
 
 @AddRoute(routes=routes, url='/copy-course/')
@@ -214,18 +182,32 @@ class Calendar:
     def __call__(self, request):
         return '200 OK', render('calendar.html', data=date.today())
 
-
-@AddRoute(routes=routes, url='/courses/')
-class Courses:
-    @DebugMethod(name='Courses')
-    def __call__(self, request):
-        logger.log('Список категорий курсов')
-        # print(site.categories)
-        return '200 OK', render('courses.html', objects_list=site.categories)
-
-
 @AddRoute(routes=routes, url='/direction/')
 class Direction:
     @DebugMethod(name='Direction')
     def __call__(self, request):
         return '200 OK', render('direction.html')
+
+
+@AddRoute(routes=routes, url='/courses/')
+class Courses(ListView):
+    template_name = 'courses.html'
+
+    def get_queryset(self):
+        mapper = MapperRegistry.get_current_mapper('category')
+        return mapper.all()
+
+
+@AddRoute(routes=routes, url='/create-category/')
+class CreateCategory(CreateView):
+    template_name = 'create_category.html'
+
+    def create_obj(self, data: dict):
+        name = data['name']
+        name = site.decode_value(name)
+        print(f'cat name={name}')
+        new_obj = site.create_category(name, category=name)
+        site.categories.append(new_obj)
+        new_obj.mark_new()
+        UnitOfWork.get_current().commit()
+

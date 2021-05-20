@@ -1,5 +1,5 @@
 from datetime import date
-from views import Index, About, StudyPrograms, CoursesList, CreateCourse, CreateCategory, CategoryList, CopyCourse, \
+from views import Index, About, StudyPrograms, CoursesList, CreateCourse, CreateCategory, CopyCourse, \
     Direction, Calendar, Contacts, NotFound404, Courses
 
 

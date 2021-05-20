@@ -50,6 +50,7 @@ class Course(CoursePrototype, Subject):
     def __init__(self, name, category):
         self.name = name
         self.category = category
+        print(f'Course: name={self.name} | cat={self.category}')
         self.category.courses.append(self)
         self.students = []
         super().__init__()
@@ -62,7 +63,6 @@ class Course(CoursePrototype, Subject):
         student.courses.append(self)
         self.notify()
 
-
 # Интерактивный курс
 class InteractiveCourse(Course):
     pass
@@ -73,8 +73,7 @@ class RecordCourse(Course):
     pass
 
 
-# Категория
-class Category:
+class Category(DomainObject):
     # реестр?
     auto_id = 0
 
@@ -91,6 +90,27 @@ class Category:
             result += self.category.course_count()
         return result
 
+
+
+"""
+# Категория
+class Category(DomainObject):
+    # реестр?
+    auto_id = 0
+
+    def __init__(self, name, category):
+        self.id = Category.auto_id
+        Category.auto_id += 1
+        self.name = name
+        self.category = category
+        self.courses = []
+
+    def course_count(self):
+        result = len(self.courses)
+        if self.category:
+            result += self.category.course_count()
+        return result
+"""
 
 # порождающий паттерн Абстрактная фабрика - фабрика курсов
 class CourseFactory:
@@ -119,14 +139,21 @@ class Engine:
 
     @staticmethod
     def create_category(name, category=None):
+        print(f'name={name} | cat={category}')
         return Category(name, category)
 
     def find_category_by_id(self, id):
+        print(f'id={id}')
+        print(self.categories)
         for item in self.categories:
-            # print('item', item.id)
             if item.id == id:
                 return item
         raise Exception(f'Нет категории с id = {id}')
+
+    def find_category_by_id_mapper(self, id):
+        mapper = MapperRegistry.get_current_mapper('category')
+        return mapper.find_cat_by_id(id)
+
 
     @staticmethod
     def create_course(type_, name, category):
@@ -233,6 +260,96 @@ class StudentMapper:
         except Exception as e:
             raise DbDeleteException(e.args)
 
+class CourseMapper:
+
+    def __init__(self, connection):
+        self.connection = connection
+        self.cursor = connection.cursor()
+        self.tablename = 'courses'
+
+
+    def all(self):
+        statement = f'SELECT * from {self.tablename}'
+        self.cursor.execute(statement)
+        result = []
+        for item in self.cursor.fetchall():
+            id, name, category_id = item
+            print(f'id={id} | course={name} | cat_id={category_id}')
+            course_name = Course(name, category_id)
+            # course_name = Course(id, category_id)
+            print(f'course_name={course_name}')
+            course_name.id = id
+            result.append(course_name)
+        return result
+
+    def course_by_category(self):
+        statement = f"SELECT id, course, category_id FROM {self.tablename} WHERE category_id=?"
+        self.cursor.execute(statement, (id,))
+        result = self.cursor.fetchone()
+        if result:
+            return Course(*result)
+        else:
+            raise RecordNotFoundException(f'record with category_id={id} not found')
+
+
+    def count_by_cat_id(self):
+        statement = f'SELECT count(*) as course_count from {self.tablename} where category_id={id}'
+        self.cursor.execute(statement)
+        course_count=self.cursor.fetchall()
+        return course_count
+
+
+class CategoryMapper:
+
+    def __init__(self, connection):
+        self.connection = connection
+        self.cursor = connection.cursor()
+        self.tablename = 'categoryes'
+
+    def all(self):
+        statement = f'SELECT * from {self.tablename}'
+        self.cursor.execute(statement)
+        result = []
+        for item in self.cursor.fetchall():
+            id, name = item
+            cat_name = Category(name, category=None)
+            cat_name.id = id
+            result.append(cat_name)
+        return result
+
+    def find_cat_by_id(self, id):
+        statement = f"SELECT category, id  FROM {self.tablename} WHERE id=?"
+        self.cursor.execute(statement, (id,))
+        result = self.cursor.fetchone()
+        if result:
+            return Category(*result)
+        else:
+            raise RecordNotFoundException(f'record with id={id} not found')
+
+    def insert(self, obj):
+        statement = f"INSERT INTO {self.tablename} (category) VALUES (?)"
+        self.cursor.execute(statement, (obj.name,))
+        try:
+            self.connection.commit()
+        except Exception as e:
+            raise DbCommitException(e.args)
+
+    def update(self, obj):
+        statement = f"UPDATE {self.tablename} SET category=? WHERE id=?"
+        # Где взять obj.id? Добавить в DomainModel? Или добавить когда берем объект из базы
+        self.cursor.execute(statement, (obj.name, obj.id))
+        try:
+            self.connection.commit()
+        except Exception as e:
+            raise DbUpdateException(e.args)
+
+    def delete(self, obj):
+        statement = f"DELETE FROM {self.tablename} WHERE id=?"
+        self.cursor.execute(statement, (obj.id,))
+        try:
+            self.connection.commit()
+        except Exception as e:
+            raise DbDeleteException(e.args)
 
 connection = sqlite3.connect(SQLBD)
 
@@ -241,17 +358,21 @@ connection = sqlite3.connect(SQLBD)
 class MapperRegistry:
     mappers = {
         'student': StudentMapper,
-        #'category': CategoryMapper
+        'category': CategoryMapper,
+        'course': CourseMapper
     }
 
     @staticmethod
     def get_mapper(obj):
-        print(f"ой ой{obj.__class__}")
+        # print(f"ой ой{obj.__class__}")
         if isinstance(obj, Student):
-            #print("дадада")
             return StudentMapper(connection)
-        #if isinstance(obj, Category):
-            #return CategoryMapper(connection)
+        if isinstance(obj, Category):
+            return CategoryMapper(connection)
+        if isinstance(obj, Course):
+            return CourseMapper(connection)
+
+
 
     @staticmethod
     def get_current_mapper(name):
